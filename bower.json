@@ -1,0 +1,13 @@
+{
+	"name": "datatables-tabletools",
+	"version": "2.2.2",
+	"main": [
+		"js/index.js",
+		"css/main.css",
+        "copy_csv_xls_pdf.swf"
+	],
+	"dependencies": {
+		"jquery": ">=1.7.0",
+		"datatables": ">=1.9.0"
+	}
+}
