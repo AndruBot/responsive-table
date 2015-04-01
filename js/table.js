@@ -6946,7 +6946,7 @@ responsiveTable = function(selector, data, params) {
     tableTools: {
       sRowSelect: 'multi',
       aButtons: buttons,
-      sSwfPath: "../bower_components/datatables-tabletools/swf/copy_csv_xls_pdf.swf"
+      sSwfPath: "http://static2.mgbeta.ru/responsive-table/copy_csv_xls_pdf.swf"
     }
   }, colVis = {
     buttonText: 'Показать/скрыть'
