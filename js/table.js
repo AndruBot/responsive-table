@@ -18137,8 +18137,6 @@ var TableTools;
 
         return TableTools;
     }; // /factory
-
-    console.log(TableTools, "TABLETOOLS");
 // Define as an AMD module if possible
     if ( typeof define === 'function' && define.amd ) {
         define( ['jquery', 'datatables'], factory );
@@ -20284,16 +20282,8 @@ var responsiveTable = function(selector, data, params) {
         $.extend(true,$.fn.DataTable.TableTools.DEFAULTS.oTags,{collection:{container:"ul",button:"li",liner:"a"}})
     }
 
-    console.log($.fn);
-
     oTable = $(selector);
 
-    sendData = function(data, url) {
-        console.log('РћС‚РїСЂР°РІР»СЏСЋ');
-        return $.post(url, data, function(res) {
-            return console.log(res);
-        }, 'json');
-    };
     if (!data || !selector) {
         return null;
     }
@@ -20305,7 +20295,6 @@ var responsiveTable = function(selector, data, params) {
         params.buttons = $.map(params.buttons, function(value, index) {
             return [value];
         });
-        console.log(params, 'params');
     }
     if (data && typeof data === 'string') {
         data = unserialize(data);
@@ -20333,14 +20322,12 @@ var responsiveTable = function(selector, data, params) {
     }
     params.headers.forEach(function(header) {
         if ((header != null ? header.map : void 0) && typeof (header != null ? header.map : void 0) === 'string') {
-            console.log(header.map, 'РЅР°РґРѕ');
             return header.map = unserialize(header.map).map;
         }
     });
     columns = [];
     params.headers.forEach(function(header) {
         var column;
-        console.log(header, 'header');
         column = {
             title: header.title
         };
@@ -20359,11 +20346,8 @@ var responsiveTable = function(selector, data, params) {
         }
         return columns.push(column);
     });
-    console.log(params, columns);
 
     for(var paramKey in params.headers){
-        console.log(paramKey, 'key');
-        console.log(params.headers[paramKey].key);
         var key = params.headers[paramKey].key;
         data.forEach(function(obj){
             if(typeof(obj[key]) == "undefined"){
@@ -20426,7 +20410,6 @@ var responsiveTable = function(selector, data, params) {
     //  title = $(oTable).find('thead th').eq($(this).index()).text();
     //  $(this).html('<input type="text" placeholder="Search ' + title + '" />');
     //});
-    console.log(buttons);
     table = $(selector).DataTable({
         'data': dataSet,
         "aoColumns": columns,
