@@ -2,7 +2,7 @@
 	"name": "datatables-tabletools",
 	"version": "2.2.2",
 	"main": [
-		"js/index.js",
+		"js/table.js",
 		"css/main.css",
         "copy_csv_xls_pdf.swf"
 	],

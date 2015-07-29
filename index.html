@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/table.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<table id = "example">
+
+</table>
+<script>
+    var users = [{"email":"romadanova99@mail.ru","role":"user","locale":"ru","online":false,"socket":null,"createdAt":"2015-03-11T06:41:14.072Z","updatedAt":"2015-03-11T06:41:14.194Z","profile":{"group":"foxford","firstName":"Александра","lastName":"Ромаданова","phone":"89642245242","city":"Иркутск"},"id":"54ffe38a5f6c5e1100e2b231"},{"email":"mm50874@yandex.ru","role":"user","locale":"ru","online":false,"socket":null,"createdAt":"2015-03-11T07:22:03.493Z","updatedAt":"2015-03-11T07:22:03.613Z","profile":{"group":"foxford","firstName":"Ольга","lastName":"Маркова","phone":"89271854109","city":"г Саранск"},"id":"54ffed1b5f6c5e1100e2b233"},{"email":"shitric2@gmail.com","role":"admin","locale":"ru","online":false,"socket":null,"createdAt":"2015-03-06T12:42:19.122Z","updatedAt":"2015-03-23T11:17:57.538Z","profile":{"firstName":"Андрей","lastName":"Чуриков","phone":"","avatarSrc":"http://cs623327.vk.me/v623327426/6141/-1CVkDrpxWQ.jpg","gender":"male","group":"foxford","finale":true,"final":false},"id":"54f9a0abc41004e2294209e1"},{"email":"kameya153@mail.ru","role":"user","locale":"ru","online":false,"socket":null,"createdAt":"2015-03-11T07:29:30.698Z","updatedAt":"2015-03-11T07:29:30.851Z","profile":{"group":"foxford","firstName":"Александра","lastName":"Дроздова","phone":"+79213215464","city":"Санкт-Петербург"},"id":"54ffeeda5f6c5e1100e2b235"},{"email":"irinaasharina@gmail.com","role":"user","locale":"ru","online":false,"socket":null,"createdAt":"2015-03-11T08:10:18.008Z","updatedAt":"2015-03-11T08:10:18.160Z","profile":{"group":"foxford","firstName":"Ирина","lastName":"Шарина","phone":"89246614925","city":"Якутск"},"id":"54fff86a5f6c5e1100e2b237"},{"email":"","role":"user","locale":"ru","online":false,"socket":null,"createdAt":"2015-03-11T14:48:47.631Z","updatedAt":"2015-03-11T14:48:47.635Z","profile":{"group":"foxford","firstName":"","lastName":"","phone":"","city":""},"id":"550055cfc0607d11004a8da4"},{"role":"user","locale":"ru","online":false,"socket":null,"createdAt":"2015-03-11T14:53:16.426Z","updatedAt":"2015-03-11T14:53:28.595Z","profile":{"group":"foxford","firstName":"Елена","lastName":"Балахонова","phone":"89271729543","command":"bm"},"id":"550056dcc0607d11004a8daa"},{"email":"","role":"user","locale":"ru","online":false,"socket":null,"createdAt":"2015-03-11T14:53:38.941Z","updatedAt":"2015-03-11T14:53:38.946Z","profile":{"group":"foxford","firstName":"","lastName":"","phone":"","city":""},"id":"550056f2c0607d11004a8dab"},{"role":"user","locale":"ru","online":false,"socket":null,"createdAt":"2015-03-11T14:54:17.515Z","updatedAt":"2015-03-11T14:54:17.520Z","profile":{"group":"foxford"},"id":"55005719c0607d11004a8dac"},{"role":"user","locale":"ru","online":false,"socket":null,"createdAt":"2015-03-11T14:59:23.583Z","updatedAt":"2015-03-11T14:59:41.563Z","profile":{"group":"foxford","firstName":"Вика","lastName":"Скутина","phone":"89227766572","command":"kitty"},"id":"5500584bc0607d11004a8db5"},{"role":"user","locale":"ru","online":false,"socket":null,"createdAt":"2015-03-11T15:02:36.182Z","updatedAt":"2015-03-11T15:02:36.187Z","profile":{"group":"foxford"},"id":"5500590cc0607d11004a8dba"},{"role":"user","locale":"ru","online":false,"socket":null,"createdAt":"2015-03-11T15:06:21.052Z","updatedAt":"2015-03-11T15:07:00.807Z","profile":{"group":"foxford","firstName":"Evelina","lastName":"Zolotko","phone":"+380934370595","command":"bm"},"id":"550059edc0607d11004a8dc2"},{"role":"user","locale":"ru","online":false,"socket":null,"createdAt":"2015-03-11T15:09:27.596Z","updatedAt":"2015-03-11T15:09:51.037Z","profile":{"group":"foxford","firstName":"Руслан","lastName":"Сабиров","phone":"89874116424","command":"dota"},"id":"55005aa7c0607d11004a8dc3"},{"role":"user","locale":"ru","online":false,"socket":null,"createdAt":"2015-03-11T15:10:20.591Z","updatedAt":"2015-03-11T15:11:12.016Z","profile":{"group":"foxford","firstName":"Руслан","lastName":"Сабиров","phone":"89874116424"},"id":"55005adcc0607d11004a8dc4"},{"role":"user","locale":"ru","online":false,"socket":null,"createdAt":"2015-03-11T15:11:21.251Z","updatedAt":"2015-03-11T15:11:21.257Z","profile":{"group":"foxford"},"id":"55005b19c0607d11004a8dc5"},{"role":"user","locale":"ru","online":false,"socket":null,"createdAt":"2015-03-11T15:15:47.140Z","updatedAt":"2015-03-11T15:16:16.994Z","profile":{"group":"foxford","firstName":"Наталья","lastName":"Миронова","phone":"89381495343","command":"bm"},"id":"55005c23c0607d11004a8dc8"},{"role":"user","locale":"ru","online":false,"socket":null,"createdAt":"2015-03-11T16:18:34.362Z","updatedAt":"2015-03-11T16:19:03.340Z","profile":{"group":"foxford","firstName":"Даниил","lastName":"Аношкин","phone":"89093282808","command":"bm"},"id":"55006ada8771b611008df576"},{"role":"user","locale":"ru","online":false,"socket":null,"createdAt":"2015-03-11T17:47:26.090Z","updatedAt":"2015-03-11T17:47:26.093Z","profile":{"group":"foxford"},"id":"55007fae57c6af1100ca50c2"},{"role":"user","locale":"ru","online":false,"socket":null,"createdAt":"2015-03-11T17:57:37.496Z","updatedAt":"2015-03-11T18:01:33.787Z","profile":{"group":"foxford","firstName":"Павел","lastName":"Глушень","phone":"+79284733497","command":"dota"},"id":"5500821157c6af1100ca50c5"},{"role":"user","locale":"ru","online":false,"socket":null,"createdAt":"2015-03-11T18:16:16.321Z","updatedAt":"2015-03-12T12:14:45.224Z","profile":{"group":"foxford","firstName":"Аня","lastName":"Кулакова","phone":"89873587678","command":"kitty"},"id":"5500867057c6af1100ca50ca"}]
+    var params = {
+        headers:[
+            {
+                key:'id',
+                title:'ID'
+            },
+            {
+                title:'name',
+                map:function(obj){
+                    return 123;
+                }
+            }
+        ]
+    }
+    responsiveTable("#example", users, params)
+</script>
+</body>
+</html>
